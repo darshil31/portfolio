@@ -1,0 +1,150 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.globe-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.info-icon {
+  background: linear-gradient(
+    135deg,
+    var(--accent-dark),
+    var(--accent-secondary-dark)
+  );
+  color: white;
+  box-shadow: 0 5px 15px rgba(157, 78, 221, 0.3);
+}
+
+.info-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.info-content p {
+  font-size: 1rem;
+}
+
+.info-content p {
+  color: var(--text-secondary-dark);
+}
+
+.contact-form {
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-dark);
+  color: var(--text-primary-dark);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent-dark);
+  box-shadow: 0 0 0 2px rgba(157, 78, 221, 0.2);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #ff3333;
+}
+
+.error-message {
+  color: #ff3333;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  display: block;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.success-message {
+  background-color: rgba(0, 200, 83, 0.1);
+  color: #00e676;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .globe-container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .globe-container {
+    width: 250px;
+    height: 250px;
+  }
+}
